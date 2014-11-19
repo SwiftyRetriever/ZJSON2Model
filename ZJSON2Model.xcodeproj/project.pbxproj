@@ -14,6 +14,7 @@
 		01CA79EE1A1C336B008D04E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01CA79ED1A1C336B008D04E9 /* Images.xcassets */; };
 		01CA79F11A1C336B008D04E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CA79EF1A1C336B008D04E9 /* LaunchScreen.xib */; };
 		01CA79FD1A1C336B008D04E9 /* ZJSON2ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA79FC1A1C336B008D04E9 /* ZJSON2ModelTests.m */; };
+		01CA7A091A1C3391008D04E9 /* ZJSON2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA7A081A1C3391008D04E9 /* ZJSON2Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		01CA79F61A1C336B008D04E9 /* ZJSON2ModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJSON2ModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01CA79FB1A1C336B008D04E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01CA79FC1A1C336B008D04E9 /* ZJSON2ModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSON2ModelTests.m; sourceTree = "<group>"; };
+		01CA7A071A1C3391008D04E9 /* ZJSON2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSON2Model.h; sourceTree = "<group>"; };
+		01CA7A081A1C3391008D04E9 /* ZJSON2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSON2Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		01CA79DF1A1C336B008D04E9 /* ZJSON2Model */ = {
 			isa = PBXGroup;
 			children = (
+				01CA7A061A1C3391008D04E9 /* ZJSON2Model */,
 				01CA79E41A1C336B008D04E9 /* AppDelegate.h */,
 				01CA79E51A1C336B008D04E9 /* AppDelegate.m */,
 				01CA79E71A1C336B008D04E9 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				01CA79FB1A1C336B008D04E9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01CA7A061A1C3391008D04E9 /* ZJSON2Model */ = {
+			isa = PBXGroup;
+			children = (
+				01CA7A071A1C3391008D04E9 /* ZJSON2Model.h */,
+				01CA7A081A1C3391008D04E9 /* ZJSON2Model.m */,
+			);
+			path = ZJSON2Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				01CA79E91A1C336B008D04E9 /* ViewController.m in Sources */,
 				01CA79E61A1C336B008D04E9 /* AppDelegate.m in Sources */,
 				01CA79E31A1C336B008D04E9 /* main.m in Sources */,
+				01CA7A091A1C3391008D04E9 /* ZJSON2Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
