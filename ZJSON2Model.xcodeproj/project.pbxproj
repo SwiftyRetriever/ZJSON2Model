@@ -428,6 +428,7 @@
 				01CA7A021A1C336B008D04E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01CA7A031A1C336B008D04E9 /* Build configuration list for PBXNativeTarget "ZJSON2ModelTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +437,7 @@
 				01CA7A051A1C336B008D04E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

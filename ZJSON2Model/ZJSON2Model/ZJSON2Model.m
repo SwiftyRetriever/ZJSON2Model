@@ -15,7 +15,8 @@ typedef NS_ENUM(NSInteger, ZJSONModelDataType) {
     ZJSONModelDataTypeDouble    = 4,
     ZJSONModelDataTypeLong      = 5,
     ZJSONModelDataTypeClass     = 6,
-    ZJSONModelDataTypeArray     = 7
+    ZJSONModelDataTypeArray     = 7,
+    ZJSONModelDataTypeDictionary= 8
 };
 
 @implementation ZJSON2Model
@@ -115,6 +116,8 @@ typedef NS_ENUM(NSInteger, ZJSONModelDataType) {
             rtype = ZJSONModelDataTypeClass;
         } else if ([dataType isEqualToString:@"NSArray"]){
             rtype = ZJSONModelDataTypeArray;
+        }  else if ([dataType isEqualToString:@"NSDictionary"]){
+            rtype = ZJSONModelDataTypeDictionary;
         }
         
         for (int j = 0; j < count; j++) {
