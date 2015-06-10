@@ -55,6 +55,9 @@ typedef NS_ENUM(NSInteger, ZJSONModelDataType) {
         
         [dictionary setObject:propertyValue forKey:propertyName];
     }
+    
+    free(properties);
+    
     return [dictionary copy];
 }
 
@@ -75,6 +78,8 @@ typedef NS_ENUM(NSInteger, ZJSONModelDataType) {
                                                           encoding:NSUTF8StringEncoding];
         [propertiesArray addObject:propertyName];
     }
+    
+    free(properties);
     
     return [propertiesArray copy];
 }
@@ -172,6 +177,8 @@ typedef NS_ENUM(NSInteger, ZJSONModelDataType) {
             break;
         }
     }
+    
+    free(properties);
     
     return model;
 }
