@@ -7,27 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010339B61B5E394100564B9B /* ZJSON2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 010339B51B5E394100564B9B /* ZJSON2Model.m */; };
 		01CA79E31A1C336B008D04E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA79E21A1C336B008D04E9 /* main.m */; };
 		01CA79E61A1C336B008D04E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA79E51A1C336B008D04E9 /* AppDelegate.m */; };
 		01CA79E91A1C336B008D04E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA79E81A1C336B008D04E9 /* ViewController.m */; };
 		01CA79EC1A1C336B008D04E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CA79EA1A1C336B008D04E9 /* Main.storyboard */; };
 		01CA79EE1A1C336B008D04E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01CA79ED1A1C336B008D04E9 /* Images.xcassets */; };
 		01CA79F11A1C336B008D04E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CA79EF1A1C336B008D04E9 /* LaunchScreen.xib */; };
-		01CA79FD1A1C336B008D04E9 /* ZJSON2ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA79FC1A1C336B008D04E9 /* ZJSON2ModelTests.m */; };
-		01CA7A091A1C3391008D04E9 /* ZJSON2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA7A081A1C3391008D04E9 /* ZJSON2Model.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		01CA79F71A1C336B008D04E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 01CA79D51A1C336B008D04E9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 01CA79DC1A1C336B008D04E9;
-			remoteInfo = ZJSON2Model;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		010339B41B5E394100564B9B /* ZJSON2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSON2Model.h; sourceTree = "<group>"; };
+		010339B51B5E394100564B9B /* ZJSON2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSON2Model.m; sourceTree = "<group>"; };
 		01CA79DD1A1C336B008D04E9 /* ZJSON2Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJSON2Model.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01CA79E11A1C336B008D04E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01CA79E21A1C336B008D04E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,9 +29,6 @@
 		01CA79EB1A1C336B008D04E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01CA79ED1A1C336B008D04E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		01CA79F01A1C336B008D04E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		01CA79F61A1C336B008D04E9 /* ZJSON2ModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJSON2ModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		01CA79FB1A1C336B008D04E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01CA79FC1A1C336B008D04E9 /* ZJSON2ModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSON2ModelTests.m; sourceTree = "<group>"; };
 		01CA7A071A1C3391008D04E9 /* ZJSON2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSON2Model.h; sourceTree = "<group>"; };
 		01CA7A081A1C3391008D04E9 /* ZJSON2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSON2Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,21 +41,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		01CA79F31A1C336B008D04E9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010339B31B5E394100564B9B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				010339B41B5E394100564B9B /* ZJSON2Model.h */,
+				010339B51B5E394100564B9B /* ZJSON2Model.m */,
+			);
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
 		01CA79D41A1C336B008D04E9 = {
 			isa = PBXGroup;
 			children = (
 				01CA79DF1A1C336B008D04E9 /* ZJSON2Model */,
-				01CA79F91A1C336B008D04E9 /* ZJSON2ModelTests */,
 				01CA79DE1A1C336B008D04E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				01CA79DD1A1C336B008D04E9 /* ZJSON2Model.app */,
-				01CA79F61A1C336B008D04E9 /* ZJSON2ModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +72,7 @@
 		01CA79DF1A1C336B008D04E9 /* ZJSON2Model */ = {
 			isa = PBXGroup;
 			children = (
+				010339B31B5E394100564B9B /* Source */,
 				01CA7A061A1C3391008D04E9 /* ZJSON2Model */,
 				01CA79E41A1C336B008D04E9 /* AppDelegate.h */,
 				01CA79E51A1C336B008D04E9 /* AppDelegate.m */,
@@ -102,23 +91,6 @@
 			children = (
 				01CA79E11A1C336B008D04E9 /* Info.plist */,
 				01CA79E21A1C336B008D04E9 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		01CA79F91A1C336B008D04E9 /* ZJSON2ModelTests */ = {
-			isa = PBXGroup;
-			children = (
-				01CA79FC1A1C336B008D04E9 /* ZJSON2ModelTests.m */,
-				01CA79FA1A1C336B008D04E9 /* Supporting Files */,
-			);
-			path = ZJSON2ModelTests;
-			sourceTree = "<group>";
-		};
-		01CA79FA1A1C336B008D04E9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				01CA79FB1A1C336B008D04E9 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -152,39 +124,17 @@
 			productReference = 01CA79DD1A1C336B008D04E9 /* ZJSON2Model.app */;
 			productType = "com.apple.product-type.application";
 		};
-		01CA79F51A1C336B008D04E9 /* ZJSON2ModelTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 01CA7A031A1C336B008D04E9 /* Build configuration list for PBXNativeTarget "ZJSON2ModelTests" */;
-			buildPhases = (
-				01CA79F21A1C336B008D04E9 /* Sources */,
-				01CA79F31A1C336B008D04E9 /* Frameworks */,
-				01CA79F41A1C336B008D04E9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				01CA79F81A1C336B008D04E9 /* PBXTargetDependency */,
-			);
-			name = ZJSON2ModelTests;
-			productName = ZJSON2ModelTests;
-			productReference = 01CA79F61A1C336B008D04E9 /* ZJSON2ModelTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		01CA79D51A1C336B008D04E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = ZERO.;
 				TargetAttributes = {
 					01CA79DC1A1C336B008D04E9 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					01CA79F51A1C336B008D04E9 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 01CA79DC1A1C336B008D04E9;
 					};
 				};
 			};
@@ -202,7 +152,6 @@
 			projectRoot = "";
 			targets = (
 				01CA79DC1A1C336B008D04E9 /* ZJSON2Model */,
-				01CA79F51A1C336B008D04E9 /* ZJSON2ModelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,13 +167,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		01CA79F41A1C336B008D04E9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -235,27 +177,11 @@
 				01CA79E91A1C336B008D04E9 /* ViewController.m in Sources */,
 				01CA79E61A1C336B008D04E9 /* AppDelegate.m in Sources */,
 				01CA79E31A1C336B008D04E9 /* main.m in Sources */,
-				01CA7A091A1C3391008D04E9 /* ZJSON2Model.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		01CA79F21A1C336B008D04E9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				01CA79FD1A1C336B008D04E9 /* ZJSON2ModelTests.m in Sources */,
+				010339B61B5E394100564B9B /* ZJSON2Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		01CA79F81A1C336B008D04E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 01CA79DC1A1C336B008D04E9 /* ZJSON2Model */;
-			targetProxy = 01CA79F71A1C336B008D04E9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		01CA79EA1A1C336B008D04E9 /* Main.storyboard */ = {
@@ -297,6 +223,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -361,6 +288,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZJSON2Model/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zero.app.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -371,41 +299,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZJSON2Model/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zero.app.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		01CA7A041A1C336B008D04E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ZJSON2ModelTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZJSON2Model.app/ZJSON2Model";
-			};
-			name = Debug;
-		};
-		01CA7A051A1C336B008D04E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ZJSON2ModelTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZJSON2Model.app/ZJSON2Model";
 			};
 			name = Release;
 		};
@@ -426,15 +321,6 @@
 			buildConfigurations = (
 				01CA7A011A1C336B008D04E9 /* Debug */,
 				01CA7A021A1C336B008D04E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		01CA7A031A1C336B008D04E9 /* Build configuration list for PBXNativeTarget "ZJSON2ModelTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				01CA7A041A1C336B008D04E9 /* Debug */,
-				01CA7A051A1C336B008D04E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
