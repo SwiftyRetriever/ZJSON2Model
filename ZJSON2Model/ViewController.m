@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "JSONObject.h"
+#import "ZJSON2Model.h"
 
 @interface ViewController ()
 
@@ -16,6 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    id JSON = @{@"id": @"9529", @"name": @"JSOName"};
+    JSONObject *obj = [JSONObject objectWithJSONObject:JSON];
+    
+    NSLog(@"%@", obj);
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

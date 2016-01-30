@@ -11,6 +11,13 @@
 
 @implementation NSObject (ZJSONMapper)
 
++ (id)JSONMapper
+{
+    return nil;
+}
+
+#pragma mark - Getter && Setter
+
 - (id)JSONMapper
 {
     return objc_getAssociatedObject(self, @selector(JSONMapper));

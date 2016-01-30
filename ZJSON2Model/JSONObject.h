@@ -1,5 +1,5 @@
 //
-//  NSObject+ZJSONMapper.h
+//  JSONObject.h
 //  ZJSON2Model
 //
 //  Created by ZhangZZZZ on 16/1/30.
@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (ZJSONMapper)
+@interface JSONObject : NSObject
 
-@property (strong, nonatomic) id JSONMapper;
-
-+ (id)JSONMapper;
+@property (strong, nonatomic) NSString *ID;
+@property (strong, nonatomic) NSString *name;
 
 @end

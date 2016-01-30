@@ -7,6 +7,8 @@
 //
 
 #import "NSObject+ZJSON2Model.h"
+#import "NSObject+ZJSONMapper.h"
+
 #import <objc/runtime.h>
 
 // support type @see https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100
@@ -105,6 +107,10 @@
     
     Ivar *ivars = class_copyIvarList(classObject, nil);
     
+    id mapper = [self JSONMapper];
+    
+    NSArray *mapKeys = [mapper allKeys];
+    
     for (int i = 0; i < count; i ++) {
         
         NSString *memberName = [NSString stringWithUTF8String:ivar_getName(ivars[i])];
@@ -114,7 +120,14 @@
         
         objc_property_t property = properties[i];
         NSString *propertyName = [[NSString alloc] initWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
-        id propertyValue = [JSONObject objectForKey:propertyName];
+
+        id propertyValue;
+        if (mapper && [mapKeys containsObject:propertyName]) {
+            id key = [mapper objectForKey:propertyName];
+            propertyValue = [JSONObject objectForKey:key];
+        } else {
+            propertyValue = [JSONObject objectForKey:propertyName];
+        }
 
         if (!propertyValue || [propertyValue isEqual:[NSNull null]]) {
             continue;
