@@ -16,16 +16,4 @@
     return nil;
 }
 
-#pragma mark - Getter && Setter
-
-- (id)JSONMapper
-{
-    return objc_getAssociatedObject(self, @selector(JSONMapper));
-}
-
-- (void)setJSONMapper:(id)JSONMapper
-{
-    objc_setAssociatedObject(self, @selector(JSONMapper), JSONMapper, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
 @end

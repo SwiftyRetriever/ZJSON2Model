@@ -22,7 +22,7 @@
     id JSON = @{@"id": @"9529", @"name": @"JSOName"};
     JSONObject *obj = [JSONObject objectWithJSONObject:JSON];
     
-    NSLog(@"%@", obj);
+    NSLog(@"%@", [obj toJSONString]);
     
     // Do any additional setup after loading the view, typically from a nib.
 }

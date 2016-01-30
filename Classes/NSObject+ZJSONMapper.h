@@ -10,7 +10,11 @@
 
 @interface NSObject (ZJSONMapper)
 
-@property (strong, nonatomic) id JSONMapper;
+/**
+ *  from JSONObject Key map to Object propertyName
+ *
+ *  @return @{ObjectKey : JSONKey}
+ */
 
 + (id)JSONMapper;
 

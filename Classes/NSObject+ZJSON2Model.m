@@ -51,7 +51,13 @@
 
 - (id)toJSONString
 {
-    return [self toJSONObject];
+    NSError *error = nil;
+    
+    NSData *JSONData = [NSJSONSerialization dataWithJSONObject:[self toJSONObject] options:NSJSONWritingPrettyPrinted error:&error];
+    
+    NSString *JSONString = [[NSString alloc] initWithData:JSONData encoding:NSUTF8StringEncoding];
+    
+    return JSONString;
 }
 
 + (NSArray *)properties
@@ -107,9 +113,8 @@
     
     Ivar *ivars = class_copyIvarList(classObject, nil);
     
-    id mapper = [self JSONMapper];
-    
-    NSArray *mapKeys = [mapper allKeys];
+    id __mapper__ = [self JSONMapper];
+    NSArray *__keys__ = [__mapper__ allKeys];
     
     for (int i = 0; i < count; i ++) {
         
@@ -122,8 +127,8 @@
         NSString *propertyName = [[NSString alloc] initWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
 
         id propertyValue;
-        if (mapper && [mapKeys containsObject:propertyName]) {
-            id key = [mapper objectForKey:propertyName];
+        if (__mapper__ && [__keys__ containsObject:propertyName]) {
+            id key = [__mapper__ objectForKey:propertyName];
             propertyValue = [JSONObject objectForKey:key];
         } else {
             propertyValue = [JSONObject objectForKey:propertyName];
