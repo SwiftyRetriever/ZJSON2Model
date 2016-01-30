@@ -15,6 +15,12 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    A longer description of ZJSON2Model in Markdown format.
 
+                   * Think: Why did you write this? What is the focus? What does it do?
+                   * CocoaPods will be using this to generate tags, and improve search results.
+                   * Try to keep it short, snappy and to the point.
+                   * Finally, don't worry about the indent, CocoaPods strips it!
+                   DESC
+
   s.homepage     = "https://github.com/ZhangZZZZ/ZJSON2Model"
 
   s.license      = "MIT"
