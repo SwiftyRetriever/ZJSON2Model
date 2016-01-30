@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/ZhangZZZZ/ZJSON2Model"
 
-  s.license      = "MIT"
+# s.license      = "MIT"
 
   s.author       = {"ZhangZZZZ" => "nick18zhang@icloud.com"}
 
