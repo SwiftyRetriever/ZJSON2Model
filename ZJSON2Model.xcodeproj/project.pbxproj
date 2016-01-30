@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		010339B61B5E394100564B9B /* ZJSON2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 010339B51B5E394100564B9B /* ZJSON2Model.m */; };
 		01CA79E31A1C336B008D04E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA79E21A1C336B008D04E9 /* main.m */; };
 		01CA79E61A1C336B008D04E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA79E51A1C336B008D04E9 /* AppDelegate.m */; };
 		01CA79E91A1C336B008D04E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA79E81A1C336B008D04E9 /* ViewController.m */; };
 		01CA79EC1A1C336B008D04E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CA79EA1A1C336B008D04E9 /* Main.storyboard */; };
 		01CA79EE1A1C336B008D04E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01CA79ED1A1C336B008D04E9 /* Images.xcassets */; };
 		01CA79F11A1C336B008D04E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CA79EF1A1C336B008D04E9 /* LaunchScreen.xib */; };
+		8A1362871C5CB1CF0011F645 /* NSArray+ZJSON2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1362831C5CB1CF0011F645 /* NSArray+ZJSON2Model.m */; };
+		8A1362881C5CB1CF0011F645 /* NSObject+ZJSON2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1362851C5CB1CF0011F645 /* NSObject+ZJSON2Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		010339B41B5E394100564B9B /* ZJSON2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSON2Model.h; sourceTree = "<group>"; };
-		010339B51B5E394100564B9B /* ZJSON2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSON2Model.m; sourceTree = "<group>"; };
 		01CA79DD1A1C336B008D04E9 /* ZJSON2Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJSON2Model.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01CA79E11A1C336B008D04E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01CA79E21A1C336B008D04E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -29,8 +28,11 @@
 		01CA79EB1A1C336B008D04E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01CA79ED1A1C336B008D04E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		01CA79F01A1C336B008D04E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		01CA7A071A1C3391008D04E9 /* ZJSON2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSON2Model.h; sourceTree = "<group>"; };
-		01CA7A081A1C3391008D04E9 /* ZJSON2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSON2Model.m; sourceTree = "<group>"; };
+		8A1362821C5CB1CF0011F645 /* NSArray+ZJSON2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZJSON2Model.h"; sourceTree = "<group>"; };
+		8A1362831C5CB1CF0011F645 /* NSArray+ZJSON2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZJSON2Model.m"; sourceTree = "<group>"; };
+		8A1362841C5CB1CF0011F645 /* NSObject+ZJSON2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZJSON2Model.h"; sourceTree = "<group>"; };
+		8A1362851C5CB1CF0011F645 /* NSObject+ZJSON2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZJSON2Model.m"; sourceTree = "<group>"; };
+		8A1362861C5CB1CF0011F645 /* ZJSON2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSON2Model.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,15 +46,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		010339B31B5E394100564B9B /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				010339B41B5E394100564B9B /* ZJSON2Model.h */,
-				010339B51B5E394100564B9B /* ZJSON2Model.m */,
-			);
-			path = Source;
-			sourceTree = SOURCE_ROOT;
-		};
 		01CA79D41A1C336B008D04E9 = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +65,7 @@
 		01CA79DF1A1C336B008D04E9 /* ZJSON2Model */ = {
 			isa = PBXGroup;
 			children = (
-				010339B31B5E394100564B9B /* Source */,
-				01CA7A061A1C3391008D04E9 /* ZJSON2Model */,
+				8A1362811C5CB1CF0011F645 /* Classes */,
 				01CA79E41A1C336B008D04E9 /* AppDelegate.h */,
 				01CA79E51A1C336B008D04E9 /* AppDelegate.m */,
 				01CA79E71A1C336B008D04E9 /* ViewController.h */,
@@ -95,13 +87,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		01CA7A061A1C3391008D04E9 /* ZJSON2Model */ = {
+		8A1362811C5CB1CF0011F645 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				01CA7A071A1C3391008D04E9 /* ZJSON2Model.h */,
-				01CA7A081A1C3391008D04E9 /* ZJSON2Model.m */,
+				8A1362821C5CB1CF0011F645 /* NSArray+ZJSON2Model.h */,
+				8A1362831C5CB1CF0011F645 /* NSArray+ZJSON2Model.m */,
+				8A1362841C5CB1CF0011F645 /* NSObject+ZJSON2Model.h */,
+				8A1362851C5CB1CF0011F645 /* NSObject+ZJSON2Model.m */,
+				8A1362861C5CB1CF0011F645 /* ZJSON2Model.h */,
 			);
-			path = ZJSON2Model;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +172,8 @@
 				01CA79E91A1C336B008D04E9 /* ViewController.m in Sources */,
 				01CA79E61A1C336B008D04E9 /* AppDelegate.m in Sources */,
 				01CA79E31A1C336B008D04E9 /* main.m in Sources */,
-				010339B61B5E394100564B9B /* ZJSON2Model.m in Sources */,
+				8A1362871C5CB1CF0011F645 /* NSArray+ZJSON2Model.m in Sources */,
+				8A1362881C5CB1CF0011F645 /* NSObject+ZJSON2Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

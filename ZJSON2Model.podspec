@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZJSON2Model"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = ""
 
   s.description  = <<-DESC
@@ -23,13 +23,13 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/ZhangZZZZ/ZJSON2Model"
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
 
   s.author             = { "ZhangZZZZ" => "nick18zhang@icloud.com" }
 
-  s.source       = { :git => "https://github.com/ZhangZZZZ/ZJSON2Model.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/ZhangZZZZ/ZJSON2Model.git", :tag => "0.0.2" }
 
-  s.source_files  = "Classes", "Source/*.{h,m}"
+  s.source_files  = "Classes", "Classes/*.{h,m}"
 # s.exclude_files = "Classes/Exclude"
 
 end
