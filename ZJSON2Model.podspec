@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ZJSON2Model"
   s.version      = "1.0.1"
-  s.summary      = ""
+  s.summary      = "JSON Object fast convert to NSObject."
 
   s.description  = <<-DESC
                    A longer description of ZJSON2Model in Markdown format.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/ZhangZZZZ/ZJSON2Model"
 
-# s.license      = "MIT"
+  s.license      = "MIT"
 
   s.author       = {"ZhangZZZZ" => "nick18zhang@icloud.com"}
 
