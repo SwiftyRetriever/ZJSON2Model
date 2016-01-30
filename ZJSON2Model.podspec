@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZJSON2Model"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "JSON Object fast convert to NSObject."
 
   s.description  = <<-DESC
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.author       = {"ZhangZZZZ" => "nick18zhang@icloud.com"}
 
-  s.source       = {:git => "https://github.com/ZhangZZZZ/ZJSON2Model.git", :tag => "1.0.1"}
+  s.source       = {:git => "https://github.com/ZhangZZZZ/ZJSON2Model.git", :tag => "1.0.2"}
 
   s.source_files  = "Classes", "Classes/*.{h,m}"
 # s.exclude_files = "Classes/Exclude"
