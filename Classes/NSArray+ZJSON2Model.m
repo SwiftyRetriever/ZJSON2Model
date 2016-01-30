@@ -18,7 +18,7 @@
         id object = [aClass objectWithJSONObject:JSONObject];
         [objectArray addObject:object];
     }
-    return objectArray;
+    return [objectArray copy];
 }
 
 @end

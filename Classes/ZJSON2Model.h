@@ -8,3 +8,4 @@
 
 #import "NSObject+ZJSON2Model.h"
 #import "NSArray+ZJSON2Model.h"
+#import "NSObject+ZJSONMapper.h"

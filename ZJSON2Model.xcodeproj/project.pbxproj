@@ -15,6 +15,7 @@
 		01CA79F11A1C336B008D04E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CA79EF1A1C336B008D04E9 /* LaunchScreen.xib */; };
 		BA4DDA841C5CF2E700CFCA0A /* NSArray+ZJSON2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DDA801C5CF2E700CFCA0A /* NSArray+ZJSON2Model.m */; };
 		BA4DDA851C5CF2E700CFCA0A /* NSObject+ZJSON2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DDA821C5CF2E700CFCA0A /* NSObject+ZJSON2Model.m */; };
+		BA9EB3B11C5CFB08007C6C08 /* NSObject+ZJSONMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB3B01C5CFB08007C6C08 /* NSObject+ZJSONMapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		BA4DDA811C5CF2E700CFCA0A /* NSObject+ZJSON2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZJSON2Model.h"; sourceTree = "<group>"; };
 		BA4DDA821C5CF2E700CFCA0A /* NSObject+ZJSON2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZJSON2Model.m"; sourceTree = "<group>"; };
 		BA4DDA831C5CF2E700CFCA0A /* ZJSON2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSON2Model.h; sourceTree = "<group>"; };
+		BA9EB3AF1C5CFB08007C6C08 /* NSObject+ZJSONMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZJSONMapper.h"; sourceTree = "<group>"; };
+		BA9EB3B01C5CFB08007C6C08 /* NSObject+ZJSONMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZJSONMapper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				BA4DDA811C5CF2E700CFCA0A /* NSObject+ZJSON2Model.h */,
 				BA4DDA821C5CF2E700CFCA0A /* NSObject+ZJSON2Model.m */,
 				BA4DDA831C5CF2E700CFCA0A /* ZJSON2Model.h */,
+				BA9EB3AF1C5CFB08007C6C08 /* NSObject+ZJSONMapper.h */,
+				BA9EB3B01C5CFB08007C6C08 /* NSObject+ZJSONMapper.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01CA79E91A1C336B008D04E9 /* ViewController.m in Sources */,
+				BA9EB3B11C5CFB08007C6C08 /* NSObject+ZJSONMapper.m in Sources */,
 				BA4DDA851C5CF2E700CFCA0A /* NSObject+ZJSON2Model.m in Sources */,
 				01CA79E61A1C336B008D04E9 /* AppDelegate.m in Sources */,
 				BA4DDA841C5CF2E700CFCA0A /* NSArray+ZJSON2Model.m in Sources */,
