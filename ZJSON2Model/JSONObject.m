@@ -9,6 +9,10 @@
 #import "JSONObject.h"
 #import "NSObject+ZJSONMapper.h"
 
+@implementation JSON
+
+@end
+
 @implementation JSONObject
 
 /**

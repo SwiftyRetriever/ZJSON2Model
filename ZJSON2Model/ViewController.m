@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    id JSON = @{@"id": @"9529", @"name": @"JSOName"};
+    id JSON = @{@"id": @"9529", @"name": @"JSOName", @"arr": @[@"1", @"2"], @"json": @{@"name": @"json_name"}};
     JSONObject *obj = [JSONObject objectWithJSONObject:JSON];
     
     NSLog(@"%@", [obj toJSONString]);

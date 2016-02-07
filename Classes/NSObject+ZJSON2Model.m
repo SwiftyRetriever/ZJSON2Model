@@ -11,13 +11,19 @@
 
 #import <objc/runtime.h>
 
+//TODO:- 完成类型重写
 // support type @see https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100
+// support base type
 #define SUPPORT_TYPE    [NSArray arrayWithObjects:@"i", @"I", @"s", @"S", @"l", @"L", @"q", @"Q", @"f", @"d", @"B", @"b", @"c", @"C", @"@", nil]
+// support objective-c type
+#define SUPPORT_OBJC    [NSArray arrayWithObjects:[NSArray class], [NSMutableArray class], [NSDictionary class], [NSMutableDictionary class], [NSSet class], [NSMutableSet class], [NSOrderedSet class], [NSMutableOrderedSet class], [NSString class], [NSMutableString class], [NSNumber class], nil]
+
 
 @implementation NSObject (ZJSON2Model)
 
 - (id)toJSONObject
 {
+    
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] init];
     
     NSString *className = NSStringFromClass([self class]);
@@ -28,6 +34,7 @@
     
     for (int i = 0; i < count; i++) {
         objc_property_t property = properties[i];
+        
         NSString *propertyName = [[NSString alloc] initWithCString:property_getName(property)
                                                           encoding:NSUTF8StringEncoding];
         id propertyValue = nil;
@@ -121,9 +128,12 @@
         NSString *memberName = [NSString stringWithUTF8String:ivar_getName(ivars[i])];
         
         const char *type = ivar_getTypeEncoding(ivars[i]);
+
         NSString *dataType =  [NSString stringWithCString:type encoding:NSUTF8StringEncoding];
         
+        
         objc_property_t property = properties[i];
+        
         NSString *propertyName = [[NSString alloc] initWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
 
         id propertyValue;
@@ -170,8 +180,16 @@
             propertyValue = [NSNumber numberWithChar:[propertyValue charValue]];
         } else if ([rType isEqualToString:@"C"]) {
             propertyValue = [NSNumber numberWithUnsignedChar:[propertyValue unsignedCharValue]];
+        } else {   
+            if ([dataType length] <= 3) continue;
+            NSString *rClassName = [dataType substringWithRange:NSMakeRange(2, [dataType length] - 3)];
+            if (!rClassName) continue;
+            Class cls = NSClassFromString(rClassName);
+            if (![SUPPORT_OBJC containsObject:cls]) {
+                propertyValue = [cls objectWithJSONObject:propertyValue];
+            }
         }
-
+        
         [model setValue:propertyValue forKey:memberName];
     }
     
